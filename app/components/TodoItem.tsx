@@ -32,7 +32,7 @@ export default function TodoItem({
     setIsedit(!isedit);
   };
   return (
-    <div key={todo.id} className="flex">
+    <div key={todo.id} className="grid grid-cols-3 py-3">
       <div className="flex items-center">
         {isedit ? (
           <div className="relative mr-6" data-te-input-wrapper-init>
@@ -63,8 +63,8 @@ export default function TodoItem({
             <h2
               className={
                 todo.status
-                  ? "text-2xl text-center w-full text-grey-darkest line-through"
-                  : "text-2xl text-center w-full text-grey-darkest"
+                  ? "text-2xl text-left pl-2 w-full text-grey-darkest line-through"
+                  : "text-2xl text-left pl-2 w-full text-grey-darkest"
               }
             >
               {todo.title}
