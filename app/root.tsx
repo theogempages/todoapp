@@ -1,4 +1,4 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
+// import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
@@ -9,9 +9,14 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import styles from "./tailwind.css";
+
 export const links: LinksFunction = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  // ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  ...(styles ? [{ rel: "stylesheet", href: styles }] : []),
 ];
+
+
 
 export default function App() {
   return (
@@ -23,7 +28,10 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <div className="container mx-auto">
+            <h2 className="text-4xl text-center mt-4">Welcome to Remix</h2>
+            <Outlet/>
+        </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
