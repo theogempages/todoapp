@@ -28,7 +28,7 @@ export default function Myapp() {
   
   return (
     <div className="py-8 px-5">
-      <h2 className="text-4xl text-center">Test zustand</h2>
+      <h2 className="text-4xl text-center">Test zustand sdazsdgdsg</h2>
       <BearCounter />
       <Controls />
     </div>
