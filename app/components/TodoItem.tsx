@@ -63,8 +63,8 @@ export default function TodoItem({
             <h2
               className={
                 todo.status
-                  ? "text-4xl text-center w-full text-grey-darkest line-through"
-                  : "text-4xl text-center w-full text-grey-darkest"
+                  ? "text-2xl text-center w-full text-grey-darkest line-through"
+                  : "text-2xl text-center w-full text-grey-darkest"
               }
             >
               {todo.title}

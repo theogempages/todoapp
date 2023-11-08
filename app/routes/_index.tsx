@@ -71,7 +71,7 @@ export default function Index() {
       {!isNew &&         
         <button
           type="button" onClick={createNew}
-          className="w-[160px] md:w-[150px] p-3 rounded border border-[#BDBDBD] outline-[#006BED]">
+          className="mb-4 w-[160px] md:w-[150px] p-3 rounded border border-[#BDBDBD] outline-[#006BED]">
           Add new todo
       </button>
       }
