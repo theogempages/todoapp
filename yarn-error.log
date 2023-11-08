@@ -1,0 +1,58 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\SCPC0029\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add zustand
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Users\SCPC0029\AppData\Local\Microsoft\WindowsApps;;C:\Users\SCPC0029\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SCPC0029\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.9.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'C:\Users\SCPC0029\Desktop\TestReact\todoapp\node_modules\@esbuild\win32-x64\esbuild.exe'
+
+npm manifest: 
+  {
+    "name": "todoapp",
+    "private": true,
+    "sideEffects": false,
+    "type": "module",
+    "scripts": {
+      "build": "remix build",
+      "dev": "remix dev --manual",
+      "start": "remix-serve ./build/index.js",
+      "typecheck": "tsc"
+    },
+    "dependencies": {
+      "@remix-run/css-bundle": "^2.2.0",
+      "@remix-run/node": "^2.2.0",
+      "@remix-run/react": "^2.2.0",
+      "@remix-run/serve": "^2.2.0",
+      "isbot": "^3.6.8",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@remix-run/dev": "^2.2.0",
+      "@remix-run/eslint-config": "^2.2.0",
+      "@types/react": "^18.2.20",
+      "@types/react-dom": "^18.2.7",
+      "eslint": "^8.38.0",
+      "tailwindcss": "^3.3.5",
+      "typescript": "^5.1.6"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
