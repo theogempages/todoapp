@@ -10,7 +10,7 @@ export default function TodoItem({
   todo: TodoType;
   updateTodo: (todo: TodoType) => void;
   deleteTodo: (id: number) => void;
-  changeStatus: (id: number, e: any) => void;
+  changeStatus: (id: number) => void;
 }) {
   const [isedit, setIsedit] = useState<boolean>(false);
   const [titleTodo, setTitleTodo] = useState<string>("");
@@ -57,14 +57,14 @@ export default function TodoItem({
               className="checked:bg-blue-500 ..."
               checked={todo.status}
               onChange={(e) => {
-                changeStatus(todo.id, e.target.checked);
+                changeStatus(todo.id);
               }}
             />
             <h2
               className={
                 todo.status
-                  ? "text-4xl text-center w-full text-grey-darkest line-through"
-                  : "text-4xl text-center w-full text-grey-darkest"
+                  ? "text-2xl text-center w-full text-grey-darkest line-through"
+                  : "text-2xl text-center w-full text-grey-darkest"
               }
             >
               {todo.title}

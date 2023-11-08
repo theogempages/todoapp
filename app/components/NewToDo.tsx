@@ -30,10 +30,10 @@ function NewToDo(props: { backToMain: any, newTodo: any; }) {
 
     return (
         <>
+            {!formstate && <div className="block mb-1 rounded-lg bg-danger-100 py-2 text-base text-danger-700"  role="alert">Please fill all fields</div>}
             <div className="flex">
-                {!formstate && <div className="block mb-4 rounded-lg bg-danger-100 px-6 py-5 text-base text-danger-700"  role="alert">Please fill all fields</div>}
                 <div className="block max-w-sm rounded-lg bg-white">
-                <form onSubmit={e => { addNewTodo(e)}} className="flex">
+                <form onSubmit={e => { addNewTodo(e)}} className="flex mb-4">
                     <div className="relative mr-6" data-te-input-wrapper-init>
                     <label
                         className="pointer-events-nonemax-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none  dark:peer-focus:text-primary"

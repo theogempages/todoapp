@@ -37,9 +37,9 @@ export default function Index() {
         return (todo.id === changedTodo.id) ? {...todo, title: changedTodo.title, enddate: changedTodo.enddate} : {...todo}
     }))
   }
-  const changeStatus = (id: number, val: boolean) => {
+  const changeStatus = (id: number) => {
     setTodos(todos.map(todo =>{
-        return (todo.id === id) ? {...todo, status: val} : {...todo}
+        return (todo.id === id) ? {...todo, status: !todo.status} : {...todo}
     }))
   }
 
@@ -71,7 +71,7 @@ export default function Index() {
       {!isNew &&         
         <button
           type="button" onClick={createNew}
-          className="w-[160px] md:w-[150px] p-3 rounded border border-[#BDBDBD] outline-[#006BED]">
+          className="mb-4 w-[160px] md:w-[150px] p-3 rounded border border-[#BDBDBD] outline-[#006BED]">
           Add new todo
       </button>
       }

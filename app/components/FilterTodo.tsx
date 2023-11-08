@@ -10,7 +10,7 @@ export default function FilterTodo({
       dataFilter(e.target.value);
     }
     return (
-        <div className="w-full">
+        <div className="w-full mb-4">
             <div>
             <select
               className="w-[100px] md:w-[150px] p-1 rounded border border-[#BDBDBD] outline-[#006BED]"
